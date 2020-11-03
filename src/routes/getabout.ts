@@ -2,9 +2,9 @@ import BaseEndpoint from "./abstract/baseendpoint";
 import {HttpResponse} from "uWebSockets.js";
 
 
-export default class Getabout extends BaseEndpoint{
+export default class GetAbout extends BaseEndpoint{
     constructor() {
-        super("/about");
+        super("about");
     }
 
     onRequest(req: HttpResponse, res: HttpResponse) {

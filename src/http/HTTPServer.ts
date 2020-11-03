@@ -1,4 +1,4 @@
-import {HttpRequest, HttpResponse, SSLApp, TemplatedApp} from "uWebSockets.js";
+import {App, HttpRequest, HttpResponse, SSLApp, TemplatedApp} from "uWebSockets.js";
 
 export default class HTTPServer{
 
@@ -11,7 +11,7 @@ export default class HTTPServer{
      */
     constructor(port: number) {
         this.port = port;
-        this.app = SSLApp({});
+        this.app = App({});
     }
 
     /**

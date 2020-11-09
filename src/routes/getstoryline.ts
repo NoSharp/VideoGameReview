@@ -4,7 +4,7 @@ import {HttpResponse} from "uWebSockets.js";
 
 export default class GetStoryline extends BaseEndpoint{
     constructor() {
-        super("graphics");
+        super("storyline");
     }
 
     onRequest(req: HttpResponse, res: HttpResponse) {

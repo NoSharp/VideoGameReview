@@ -7,6 +7,7 @@ export function load(server: HTTPServer){
 
     for (let endpoint of endpoints) {
         if(!endpoint.endsWith(".js")) continue;
+        console.log(endpoint);
         let endpointClass = require(`./routes/${endpoint}`).default;
         let data = new endpointClass();
         console.log(data.endpoint);
